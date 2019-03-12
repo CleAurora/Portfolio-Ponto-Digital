@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*css da header*/
+header{
+    background-color: #002858;
+}
+header > nav > ul{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2em;
+}
+header> nav > ul > li > a{
+    color: #fff;
+}
+#apresentacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    font-weight: bold;
+    font-size: 3.2em;
+}
+/*css das características*/
+.conteudocaracteristicas{
+    color: 
+
+}
+.content{
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002858;
+    padding: 2em;
+}
+.container{
+    font-size: 25px;
+    color: #656878;
+    text-align: justify;
+    padding: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.caracteristicafigura{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em;
+}
+.caracteristicafigura > p{
+    margin: 1em;
+
+}
+h3{
+    padding: 1.5em;
+    color: #002858;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*css dos tutoriais*/
+.conteudotutorial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+.conteudotutorial > video{
+    margin: 30px;
+
+}
+.conteudotutorial > iframe{
+    margin: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*css do footer*/
+footer{
+    text-align: center;
+    background-color: #002858;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #d1d1d1;
+}
+.local > img{
+    width: 40px;
+    height: 55px;
+    padding: 1em;
+
+}
+address{
+    padding-bottom: 10px;
+}
+.iconesredes > a > img{
+    width: 40px;
+    height: 40px;
+}

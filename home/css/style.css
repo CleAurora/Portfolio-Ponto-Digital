@@ -6,6 +6,8 @@
 a{
     text-decoration: none;
 }
+
+/*css da header*/
 header{
     background-color: #002858;
 }
@@ -13,7 +15,7 @@ header > nav > ul{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 2em;
 }
 header> nav > ul > li > a{
@@ -24,4 +26,139 @@ header> nav > ul > li > a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 1em;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    font-weight: bold;
+    font-size: 3.2em;
+}
+
+/*css da parte de tendência*/
+.content{
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002858;
+    padding: 1em;
+}
+#conteudotendencias{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.container{
+    font-size: 0.95em;
+    color: #656878;
+    text-align: justify;
+    padding: 1em;
+}
+#conteudotendencias > div > p{
+    padding: 1em;
+}
+
+/*css da parte do software*/
+#software > h2{
+    background-color: #de9e32;
+    text-align: end;
+    padding: 0.3em 1em 0.3em 1em;
+}
+#conteudosoftware{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#conteudosoftware > div > p{
+    padding: 1em;
+}
+
+/*css da parte dos pacotes*/
+.conteudopacotes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+.conteudopacotes > section{
+    background-color: #d1d1d1;
+    box-shadow:  0.5em  0.5em #002858,
+                -0.5em  0.5em #002858,
+                 0.5em -0.5em #002858,
+                -0.5em -0.5em #002858;
+    padding: 20px 10px 0px 10px;
+}
+.preco{
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px  2px #002858,
+                 2px -2px #002858,
+                -2px  2px #002858,
+                -2px -2px #002858;
+    color: #656878;
+    text-align: center;
+}
+.precogratis{
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 3px  3px #002858,
+                 3px -3px #002858,
+                -3px  3px #002858,
+                -3px -3px #002858;
+    color: #de9e32;
+    text-align: center;
+}
+
+/*css da parte das empresas inteligentes e opiniao*/
+.empresasopiniao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #363840;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1em;
+}
+.empresasopiniao > div > img{
+    width: 300px;
+    height: 200px;
+}
+.empresasopiniao > div > p{
+    width: 300px;
+    text-align: left;
+}
+#empresas > div > h2{
+    background-color: #de9e32;
+    text-align: end;
+    padding: 0.3em 1em 0.3em 1em;
+}
+
+#opiniao{
+    background-color: #de9e32;
+}
+.nomeopiniao{
+    margin-left: -60px;
+    padding: 1em;
+}
+
+/*css do footer*/
+footer{
+    text-align: center;
+    background-color: #002858;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #d1d1d1;
+}
+.local > img{
+    width: 40px;
+    height: 55px;
+    padding: 1em;
+
+}
+address{
+    padding-bottom: 10px;
+}
+.iconesredes > a > img{
+    width: 40px;
+    height: 40px;
 }
