@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*css da header*/
+header{
+    background-color: #002858;
+}
+header > nav > ul{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2em;
+}
+header> nav > ul > li > a{
+    color: #fff;
+}
+#apresentacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    font-weight: bold;
+    font-size: 3.2em;
+}
+
+/*css do formulário*/
+body{
+    text-align: center;
+    height: 100%;
+}
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.content{
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002858;
+    padding: 1em;
+}
+
+.container {
+    font-size: 30px;
+    color: #656878;
+    text-align: justify;
+    padding: 0 1em 1em 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form{
+    margin: 0 auto;
+    width: 50%;
+    text-align: left;
+}
+
+input, select{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #d1d1d1;
+}
+form{
+    margin: 10px 0;
+}
+form > div{
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+/*css do footer*/
+footer{
+    text-align: center;
+    background-color: #002858;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #d1d1d1;
+}
+.local > img{
+    width: 40px;
+    height: 55px;
+    padding: 1em;
+
+}
+address{
+    padding-bottom: 10px;
+}
+.iconesredes > a > img{
+    width: 40px;
+    height: 40px;
+}
