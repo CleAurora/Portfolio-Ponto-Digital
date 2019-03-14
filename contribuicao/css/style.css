@@ -37,21 +37,21 @@ h1{
 
 /*css da parte de tendência*/
 .content{
-    font-size: 60px;
+    font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #002858;
     padding: 1em;
 }
 
 .container{
-    font-size: 40px;
+    font-size: 20px;
     color: #656878;
     text-align: justify;
     padding: 1em;
 }
 
 #contribuir > ul{
-    font-size: 40px;
+    font-size: 20px;
     color: #656878;
     text-align: center;
     padding: 1em;
@@ -60,7 +60,7 @@ h1{
 /*css do footer*/
 footer{
     text-align: center;
-    background-color: #002858;
+    background-color: #0f2558;
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #d1d1d1;

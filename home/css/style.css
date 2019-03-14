@@ -1,164 +1,286 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 /*css da header*/
-header{
+
+header {
     background-color: #002858;
 }
-header > nav > ul{
+
+header>nav>ul {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 2em;
+    font-size: 30px;
 }
-header> nav > ul > li > a{
+
+header>nav>ul>li>a {
     color: #fff;
 }
-#apresentacao{
+
+#apresentacao {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: 30px;
     color: #fff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-h1{
+
+h1 {
     font-weight: bold;
-    font-size: 3.2em;
+    font-size: 60px;
 }
 
 /*css da parte de tendência*/
-.content{
-    font-size: 2em;
+
+.content {
+    font-size: 38px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #002858;
-    padding: 1em;
+    padding: 38px;
 }
-#conteudotendencias{
+
+#conteudotendencias {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
-.container{
-    font-size: 0.95em;
+
+.container {
+    font-size: 25px;
     color: #656878;
     text-align: justify;
-    padding: 1em;
+    padding: 25px;
 }
-#conteudotendencias > div > p{
+
+#conteudotendencias>div>p {
     padding: 1em;
 }
 
 /*css da parte do software*/
-#software > h2{
+
+#software>h2 {
     background-color: #de9e32;
     text-align: end;
-    padding: 0.3em 1em 0.3em 1em;
+    padding: 11.4px 38px 11.4px 38px;
 }
-#conteudosoftware{
+
+#conteudosoftware {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
-#conteudosoftware > div > p{
-    padding: 1em;
+
+#conteudosoftware>div>p {
+    padding: 25px;
 }
 
 /*css da parte dos pacotes*/
-.conteudopacotes{
+
+.conteudopacotes {
     display: flex;
     justify-content: space-around;
-    margin-top: 2em;
+    margin-top: 50px;
 }
-.conteudopacotes > section{
+
+.conteudopacotes>section {
     background-color: #d1d1d1;
-    box-shadow:  0.5em  0.5em #002858,
-                -0.5em  0.5em #002858,
-                 0.5em -0.5em #002858,
-                -0.5em -0.5em #002858;
+    box-shadow: 10px 10px #002858, -10px 10px #002858, 10px -10px #002858, -10px -10px #002858;
     padding: 20px 10px 0px 10px;
 }
-.preco{
-    font-size: 2em;
+
+.preco {
+    font-size: 60px;
     font-weight: bold;
-    text-shadow: 2px  2px #002858,
-                 2px -2px #002858,
-                -2px  2px #002858,
-                -2px -2px #002858;
+    text-shadow: 3px 3px #002858, 3px -3px #002858, -3px 3px #002858, -3px -3px #002858;
     color: #656878;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.precogratis{
-    font-size: 2em;
+
+.precogratis {
+    font-size: 48.45px;
     font-weight: bold;
-    text-shadow: 3px  3px #002858,
-                 3px -3px #002858,
-                -3px  3px #002858,
-                -3px -3px #002858;
+    text-shadow: 3px 3px #002858, 3px -3px #002858, -3px 3px #002858, -3px -3px #002858;
     color: #de9e32;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*css da parte das empresas inteligentes e opiniao*/
-.empresasopiniao{
+
+.empresasopiniao {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: #363840;
+    color: #000;
     font-size: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 1em;
 }
-.empresasopiniao > div > img{
+
+.empresasopiniao>div>img {
     width: 300px;
     height: 200px;
 }
-.empresasopiniao > div > p{
+
+.empresasopiniao>div>p {
     width: 300px;
     text-align: left;
 }
-#empresas > div > h2{
+
+#empresas>div>h2 {
     background-color: #de9e32;
     text-align: end;
     padding: 0.3em 1em 0.3em 1em;
 }
 
-#opiniao{
+#opiniao {
     background-color: #de9e32;
 }
-.nomeopiniao{
+
+.nomeopiniao {
     margin-left: -60px;
     padding: 1em;
 }
 
+.nomespessoas {
+    font-weight: bold;
+    font-style: italic;
+}
+
 /*css do footer*/
-footer{
+
+footer {
     text-align: center;
-    background-color: #002858;
+    background-color: #0f2558;
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #d1d1d1;
 }
-.local > img{
+
+.local>img {
     width: 40px;
     height: 55px;
     padding: 1em;
-
 }
-address{
+
+address {
     padding-bottom: 10px;
 }
-.iconesredes > a > img{
+
+.iconesredes>a>img {
     width: 40px;
     height: 40px;
+}
+
+/*Break de 1368px*/
+
+@media(max-width: 1368px) {
+    /*css da header*/
+    header>nav>ul {
+        font-size: 20px;
+    }
+    #apresentacao {
+        padding: 10px;
+        color: #fff;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 40px;
+    }
+    /*css da parte de tendência*/
+    .content {
+        font-size: 17px;
+        padding: 17px;
+    }
+    .container {
+        font-size: 25px;
+        padding: 25px;
+    }
+    #conteudotendencias>div>p {
+        padding: 1em;
+    }
+    #conteudotendencias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #software>h2 {
+        background-color: #de9e32;
+        text-align: end;
+        padding: 11.4px 38px 11.4px 38px;
+    }
+    #conteudosoftware {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #conteudosoftware>div>p {
+        padding: 25px;
+    }
+    /*css da parte do software*/
+    #conteudosoftware {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #conteudosoftware>div>p {
+        padding: 25px;
+    }
+    /*css da parte dos pacotes*/
+    .conteudopacotes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .conteudopacotes>section {
+        background-color: #d1d1d1;
+        box-shadow:  3px  3px #002858, 
+                    -3px  3px #002858, 
+                     3px -3px #002858, 
+                    -3px -3px #002858;
+        padding: 20px 10px 0px 10px;
+        margin-bottom: 40px;
+    }
+    .plano {
+        width: 40%;
+    }
+    .preco {
+        font-size: 30px;
+        font-weight: bold;
+        text-shadow: 1px  1px #002858, 
+                     1px -1px #002858, 
+                    -1px  1px #002858,
+                    -1px -1px #002858;
+        color: #656878;
+        text-align: center;
+       
+    }
+    .precogratis {
+        font-size: 24.2px;
+        font-weight: bold;
+        text-shadow: 3px 3px #002858, 3px -3px #002858, -3px 3px #002858, -3px -3px #002858;
+        color: #de9e32;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 }

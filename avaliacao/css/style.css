@@ -35,47 +35,97 @@ h1{
     font-size: 3.2em;
 }
 
-/*css da parte de história*/
+/*css do form*/
+
+body{
+    text-align: center;
+    height: 100%;
+}
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .content{
     font-size: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #002858;
     padding: 1em;
 }
-.conteudohistoria{
-    display: flex;
-    flex-direction: row;
-}
 
-.container{
+.container {
     font-size: 30px;
     color: #656878;
     text-align: justify;
     padding: 0 1em 1em 1em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.conteudohistoria{
-    padding: 1em 1em 2em 1em;
+
+form{
+    margin: 0 auto;
+    width: 50%;
+    text-align: left;
+}
+input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #d1d1d1;
+}
+form{
+    margin: 10px 0;
+}
+.estrelas{
+    display: block;
+    width: 45%;
+    margin: 0 0  0 250px;
+   
+}
+.comente{
+    height: 200px;
 }
 
-/*css da parte da equipe*/
-.conteudoequipe{
-    align-self: center;
-    margin: 0 0 20px 300px;
+/*css da parte das empresas inteligentes e opiniao*/
+.content{
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002858;
+    padding: 1em;
 }
-
-/*css da parte de produções anteriores */
-.conteudoproducoes{
+.empresasopiniao{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    color: #000;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1em;
 }
-.conteudoproducoes > div > p{
-    margin: 0px 0px 0px -50px;
+.empresasopiniao > div > img{
+    width: 300px;
+    height: 200px;
+}
+.empresasopiniao > div > p{
+    width: 300px;
+    text-align: left;
+}
+#empresas > div > h2{
+    background-color: #de9e32;
+    text-align: end;
+    padding: 0.3em 1em 0.3em 1em;
 }
 
-
+#opiniao{
+    background-color: #de9e32;
+}
+.nomeopiniao{
+    margin-left: -60px;
+    padding: 1em;
+}
+.nomespessoas{
+    font-weight: bold;
+    font-style: italic; 
+}
 
 /*css do footer*/
 footer{
