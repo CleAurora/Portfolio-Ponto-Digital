@@ -8,49 +8,58 @@ a{
 }
 
 /*css da header*/
-header{
+
+#btn_menu{
+    display: none;
+}
+header {
     background-color: #002858;
 }
-header > nav > ul{
+
+header>nav>ul {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 2em;
+    font-size: 30px;
 }
-header> nav > ul > li > a{
+
+header>nav>ul>li>a {
     color: #fff;
 }
-#apresentacao{
+
+#apresentacao {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: 30px;
     color: #fff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-h1{
+
+h1 {
     font-weight: bold;
-    font-size: 3.2em;
+    font-size: 60px;
 }
+
 /*css das características*/
 .conteudocaracteristicas{
     color: 
 
 }
-.content{
-    font-size: 2em;
+.content {
+    font-size: 38px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #002858;
-    padding: 2em;
+    padding: 38px;
 }
-.container{
+
+.container {
     font-size: 25px;
     color: #656878;
     text-align: justify;
-    padding: 1em;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 25px;
 }
 .caracteristicafigura{
     display: flex;
@@ -85,37 +94,158 @@ h3{
     margin: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*css do footer*/
-footer{
+
+footer {
     text-align: center;
     background-color: #0f2558;
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #d1d1d1;
 }
-.local > img{
+
+.local>img {
     width: 40px;
     height: 55px;
     padding: 1em;
-
 }
-address{
+
+address {
     padding-bottom: 10px;
 }
-.iconesredes > a > img{
+
+.iconesredes>a>img {
     width: 40px;
     height: 40px;
+}
+
+/*Break de 1368px*/
+
+@media(max-width: 1368px) {
+    /*css da header*/
+    #btn_menu{
+        display: none;
+    }
+    header>nav>ul {
+        font-size: 20px;
+    }
+    #apresentacao {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .content {
+        font-size: 17px;
+        padding: 17px;
+    }
+    .container {
+        font-size: 25px;
+        padding: 25px;
+    }
+      /*css do footer*/
+      .local > a >img {
+        width: 40px;
+        height: 55px;
+    }
+
+    /*css dos tutoriais*/
+    .conteudotutorial{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+}
+
+/*Break de 768px*/
+@media(max-width: 768px) {
+    /*css da header*/
+    .menu > ul{
+        background-color: #de9e32;
+        color: #fbefff;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        position: absolute;
+        width: 100%;
+        padding: 10px;
+    }
+    .menu > ul > li > a{
+        padding: 10px;
+    }
+    nav ul a{
+        color: #fbefff;/*peso que tem cada um dos ítens.*/
+    }
+
+    #btn_menu{
+        display: block;
+        background: #002858;
+        color: #fff;
+        text-align: right;
+        padding: 10px
+    }
+    .menu{
+        display: none;
+    }
+    .active{
+        display: block;
+
+
+    }
+
+    #apresentacao {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    #apresentacao > div > img{
+        width: 100px;
+    }
+    
+    .content {
+        font-size: 30px;
+        padding: 17px;
+    }
+    .container {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .caracteristicafigura {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /*css dos tutoriais*/
+    .conteudotutorial{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+    .conteudotutorial > video{
+        margin: 30px;
+
+    }
+    .conteudotutorial > iframe{
+        margin: 30px;
+        width: 320;
+        height: 240;
+    }
+}
+
+/*Break de 360px*/
+@media(max-width: 360px) {
+    .conteudotutorial > iframe{
+        margin: 30px;
+        width: 300;
+        height: 200;
+    }
 }

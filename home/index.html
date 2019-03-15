@@ -10,8 +10,9 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="topo">
+        <span id = "btn_menu" class = "btn_menu">M</span>
+        <nav class = "menu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#pacotes">Pacotes</a></li>
@@ -121,11 +122,11 @@
         <div class="empresasopiniao">
             <div>
                 <img src="imagens/unnamed.png" alt="Logotipo do Nubank.">
-                <p>Facilitou demais na <br> supervisão!</p>
+                <p>Facilitou demais na supervisão!</p>
             </div>
             <div>
                 <img src="imagens/concretesolutions-1497388465-slideshare-profilepng.png" alt="Logotipo Concrete Solutions.">
-                <p>Vale muito a pena. <br> É flexível e cuida do <br> trabalho.</p>
+                <p>Vale muito a pena. É flexível e cuida do trabalho.</p>
             </div>
             <div>
                 <img src="imagens/Accenture-Logo.png" alt="Logotipo Accenture">
@@ -179,6 +180,17 @@
         </div>
 
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        var nav = $('.menu');
+        var botao = $('.btn_menu');
+        botao.on('click', function(){
+            nav.toggleClass("active");
+        });
+    }); 
+    </script>
 
 </body>
 

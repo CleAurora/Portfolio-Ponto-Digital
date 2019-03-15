@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ponto Digital - Home</title>
+    <title>Ponto Digital - Como Usar</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="topo">
+        <span id = "btn_menu" class = "btn_menu">M</span>
+        <nav class = "menu">
             <ul>
                 <li><a href="../home/index.html">Home</a></li>
                 <li><a href="../home/index.html#pacotes">Pacotes</a></li>
@@ -103,19 +104,32 @@
             </p>
     </section>
     <footer>
-        <div class="local">
-            <a href="https://goo.gl/maps/m7Ku7LqrwsA2" target="_blank" >
-                <img src="imagens/localgoogle.png" alt="Ícone vermelho de lugar.">
-            </a>
-        </div>
-        <address>Alameda Barão de Limeira 539 <br> Jd. Boa Vista São Paulo SP</address>
-        <div class= "iconesredes">
-            <a href="https://www.facebook.com/pontomaisweb/" target="_blank"><img src="imagens/facebook-icone-icon-4.png" alt="Ícone Facebook"></a>
-            <a href="https://twitter.com/appolicious"target="_blank" ><img src="imagens/square-twitter-512.png" alt="Ícone Twiter"></a>
-            <a href="https://www.instagram.com/pontomaisweb/?hl=pt-br" target="_blank"><img src="imagens/icinstagram.jpg" alt="Ícone Instagram"></a>
-        </div>
-        
+            <div class="local">
+                <a href="https://goo.gl/maps/m7Ku7LqrwsA2" target="_blank">
+                    <img src="imagens/localgoogle.png" alt="Ícone vermelho de lugar.">
+                </a>
+            </div>
+            <address>Alameda Barão de Limeira 539 <br> Jd. Boa Vista São Paulo SP</address>
+            <div class="iconesredes">
+                <a href="https://www.facebook.com/pontomaisweb/" target="_blank"><img src="imagens/facebook-icone-icon-4.png"
+                        alt="Ícone Facebook"></a>
+                <a href="https://twitter.com/appolicious" target="_blank"><img src="imagens/square-twitter-512.png" alt="Ícone Twiter"></a>
+                <a href="https://www.instagram.com/pontomaisweb/?hl=pt-br" target="_blank"><img src="imagens/icinstagram.jpg"
+                        alt="Ícone Instagram"></a>
+            </div>
+    
     </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        var nav = $('.menu');
+        var botao = $('.btn_menu');
+        botao.on('click', function(){
+            nav.toggleClass("active");
+        });
+    }); 
+    </script>
 
 </body>
 </html>
