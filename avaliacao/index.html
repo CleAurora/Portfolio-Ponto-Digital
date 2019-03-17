@@ -48,8 +48,8 @@
 
                 <img src="imagens/5-estrela.png"  class= "estrelas" alt="5 estrelas para que a pessoa possa avaliar o site" width="220px" height="80px">
 
-                <label for ="opiniao"></label>
-                <textarea cols=112 id="opiniao" rows="10" name="opiniao" maxlength="500" wrap="hard" placeholder="Deixe seu comentário aqui" required></textarea>
+                <label for ="comente"></label>
+                <textarea  id="comente" rows="10" name="comente" maxlength="500" wrap="hard" placeholder="Deixe seu comentário aqui" required></textarea>
 
                 <input type="submit" value="Enviar Comentário">
             </form>
@@ -81,34 +81,34 @@
                 <p>Eu decidi começar do zero, minha empresa ainda é pequena, mas já conta com dez funcionarios. Se não fosse pelo ponto digital, teria muita dificuldade de ter o controle que tenho em relação ao RH. Obrigado Aí sim!!!</p>
             </div>
         </div>
+    </section>
+
+    <footer>
+        <div class="local">
+            <a href="https://goo.gl/maps/m7Ku7LqrwsA2" target="_blank">
+                <img src="imagens/localgoogle.png" alt="Ícone vermelho de lugar.">
+            </a>
+        </div>
+        <address>Alameda Barão de Limeira 539 <br> Jd. Boa Vista São Paulo SP</address>
+        <div class="iconesredes">
+            <a href="https://www.facebook.com/pontomaisweb/" target="_blank"><img src="imagens/facebook-icone-icon-4.png"
+                    alt="Ícone Facebook"></a>
+            <a href="https://twitter.com/appolicious" target="_blank"><img src="imagens/square-twitter-512.png" alt="Ícone Twiter"></a>
+            <a href="https://www.instagram.com/pontomaisweb/?hl=pt-br" target="_blank"><img src="imagens/icinstagram.jpg"
+                    alt="Ícone Instagram"></a>
+        </div>
+    </footer>
     
-        <footer>
-            <div class="local">
-                <a href="https://goo.gl/maps/m7Ku7LqrwsA2" target="_blank">
-                    <img src="imagens/localgoogle.png" alt="Ícone vermelho de lugar.">
-                </a>
-            </div>
-            <address>Alameda Barão de Limeira 539 <br> Jd. Boa Vista São Paulo SP</address>
-            <div class="iconesredes">
-                <a href="https://www.facebook.com/pontomaisweb/" target="_blank"><img src="imagens/facebook-icone-icon-4.png"
-                        alt="Ícone Facebook"></a>
-                <a href="https://twitter.com/appolicious" target="_blank"><img src="imagens/square-twitter-512.png" alt="Ícone Twiter"></a>
-                <a href="https://www.instagram.com/pontomaisweb/?hl=pt-br" target="_blank"><img src="imagens/icinstagram.jpg"
-                        alt="Ícone Instagram"></a>
-            </div>
-    
-        </footer>
-    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-        $(function(){
-            var nav = $('.menu');
-            var botao = $('.btn_menu');
-            botao.on('click', function(){
-                nav.toggleClass("active");
-            });
-        }); 
-        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        var nav = $('.menu');
+        var botao = $('.btn_menu');
+        botao.on('click', function(){
+            nav.toggleClass("active");
+        });
+    }); 
+    </script>
 
 </body>
 </html>
