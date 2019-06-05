@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*css da header*/
+
+#btn_menu{
+    display: none;
+}
+header {
+    background-color: #002858;
+}
+
+header>nav>ul {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+header>nav>ul>li>a {
+    color: #fff;
+}
+
+#apresentacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+/*css da parte de tendência*/
+
+.content {
+    font-size: 38px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002858;
+    padding: 38px;
+}
+
+#conteudotendencias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {
+    font-size: 25px;
+    color: #656878;
+    text-align: justify;
+    padding: 25px;
+}
+
+#conteudotendencias>div>p {
+    padding: 1em;
+}
+
+/*css da parte do software*/
+
+#software>h2 {
+    background-color: #de9e32;
+    text-align: end;
+    padding: 11.4px 38px 11.4px 38px;
+}
+
+#conteudosoftware {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#conteudosoftware>div>p {
+    padding: 25px;
+}
+
+/*css da parte dos pacotes*/
+
+.conteudopacotes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.conteudopacotes>section {
+    background-color: #d1d1d1;
+    box-shadow: 10px 10px #002858, -10px 10px #002858, 10px -10px #002858, -10px -10px #002858;
+    padding: 20px 10px 0px 10px;
+}
+
+.preco {
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 3px 3px #002858, 3px -3px #002858, -3px 3px #002858, -3px -3px #002858;
+    color: #656878;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.precogratis {
+    font-size: 48.45px;
+    font-weight: bold;
+    text-shadow: 3px 3px #002858, 3px -3px #002858, -3px 3px #002858, -3px -3px #002858;
+    color: #de9e32;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*css da parte das empresas inteligentes e opiniao*/
+
+.empresasopiniao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #000;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1em;
+}
+
+.empresasopiniao>div>img {
+    width: 300px;
+    height: 200px;
+}
+
+.empresasopiniao>div>p {
+    width: 300px;
+    text-align: left;
+}
+
+#empresas>div>h2 {
+    background-color: #de9e32;
+    text-align: end;
+    padding: 0.3em 1em 0.3em 1em;
+}
+
+#opiniao {
+    background-color: #de9e32;
+}
+
+.nomeopiniao {
+    margin-left: -60px;
+    padding: 1em;
+}
+
+.nomespessoas {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*css do footer*/
+
+footer {
+    text-align: center;
+    background-color: #0f2558;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #d1d1d1;
+}
+
+.local>img {
+    width: 40px;
+    height: 55px;
+    padding: 1em;
+}
+
+address {
+    padding-bottom: 10px;
+}
+
+.iconesredes>a>img {
+    width: 40px;
+    height: 40px;
+}
+
+/*Break de 1368px*/
+
+@media(max-width: 1368px) {
+    /*css da header*/
+    #btn_menu{
+        display: none;
+    }
+    header>nav>ul {
+        font-size: 20px;
+    }
+    #apresentacao {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .content {
+        font-size: 30px;
+        padding: 17px;
+    }
+    .container {
+        font-size: 25px;
+        padding: 25px;
+    }
+    /*css da parte de tendência*/
+    
+    #conteudotendencias>div>p {
+        padding: 1em;
+    }
+    #conteudotendencias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #software>h2 {
+        padding: 11.4px 38px 11.4px 38px;
+    }
+    #conteudosoftware {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #conteudosoftware>div>p {
+        padding: 25px;
+    }
+    /*css da parte do software*/
+    #conteudosoftware {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #conteudosoftware>div>p {
+        padding: 25px;
+    }
+    /*css da parte dos pacotes*/
+    .conteudopacotes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .conteudopacotes>section {
+        background-color: #d1d1d1;
+        box-shadow:  3px  3px #002858, 
+                    -3px  3px #002858, 
+                     3px -3px #002858, 
+                    -3px -3px #002858;
+        padding: 20px 10px 0px 10px;
+        margin-bottom: 40px;
+    }
+    .plano {
+        width: 40%;
+    }
+    .preco {
+        font-size: 30px;
+        text-shadow: 1px  1px #002858, 
+                     1px -1px #002858, 
+                    -1px  1px #002858,
+                    -1px -1px #002858;
+       
+    }
+    .precogratis {
+        font-size: 24.2px;
+        text-shadow: 3px 3px #002858, 3px -3px #002858, -3px 3px #002858, -3px -3px #002858;
+    }
+
+    /*css da parte das empresas inteligentes e opiniao*/
+    .empresasopiniao {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 20px;    
+    }
+    
+    .empresasopiniao>div>img {
+        width: 150px;
+        height: 100px;
+    }
+    
+    .empresasopiniao>div>p {
+        width: 150px;
+        text-align: left;
+    }
+    
+    
+    #opiniao {
+        background-color: #de9e32;
+    }
+    
+    .nomeopiniao {
+        margin-left: -40px;
+        padding: 1em;
+    }
+    /*css do footer*/
+    .local > a >img {
+        width: 40px;
+        height: 55px;
+    }
+}
+
+
+/*Break de 768px*/
+@media(max-width: 768px) {
+    /*css da header*/
+    .menu > ul{
+        background-color: #de9e32;
+        color: #fbefff;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        position: absolute;
+        width: 100%;
+        padding: 10px;
+    }
+    .menu > ul > li > a{
+        padding: 10px;
+    }
+    nav ul a{
+        color: #fbefff;/*peso que tem cada um dos ítens.*/
+    }
+
+    #btn_menu{
+        display: block;
+        background: #002858;
+        color: #fff;
+        text-align: right;
+        padding: 10px
+    }
+    .menu{
+        display: none;
+    }
+    .active{
+        display: block;
+
+
+    }
+
+    #apresentacao {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    #apresentacao > div > img{
+        width: 100px;
+    }
+    /*css da parte de tendência*/
+    .content {
+        font-size: 30px;
+        padding: 17px;
+    }
+    .container {
+        font-size: 20px;
+        padding: 5px;
+    }
+    #conteudotendencias>div>p {
+        padding: 1em;
+    }
+    #conteudotendencias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #conteudotendencias > div > img{
+        width: 300px;
+    }
+    #software>h2 {
+        padding: 11.4px 38px 11.4px 38px;
+        margin: 0;
+    }
+    #conteudosoftware {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #conteudosoftware>div>p {
+        padding: 25px;
+    }
+    #conteudosoftware > div > img{
+        width: 300px;
+    }
+    /*css da parte do software*/
+    #conteudosoftware {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #conteudosoftware>div>p {
+        padding: 25px;
+    }
+
+    /*css da parte das empresas inteligentes e opiniao*/
+    .empresasopiniao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center
+        /*font-size: 20px;*/    
+    }
+    
+    .empresasopiniao>div>img {
+        width: 150px;
+        height: 100px;
+        padding: 20px 0 10px 0;
+    }
+    
+    .empresasopiniao>div>p {
+        width: 250px;
+        text-align: left;
+    }
+ 
+}
+
+
+/*Break de 360px*/
+@media(max-width: 360px) {
+    /*css da parte dos pacotes*/
+   
+    .plano {
+        width: 90%;
+    }
+    
+ 
+}
+
+
+/*css parte de como usar*/
+
+/*css das características*/
+.conteudocaracteristicas{
+    color: 
+
+}
+.content {
+    font-size: 38px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002858;
+    padding: 38px;
+}
+
+.container {
+    font-size: 25px;
+    color: #656878;
+    text-align: justify;
+    padding: 25px;
+}
+.caracteristicafigura{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em;
+}
+.caracteristicafigura > p{
+    margin: 1em;
+
+}
+h3{
+    padding: 1.5em;
+    color: #002858;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*css dos tutoriais*/
+.conteudotutorial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+.conteudotutorial > video{
+    margin: 30px;
+
+}
+.conteudotutorial > iframe{
+    margin: 30px;
+}
+
+
+
+/*Break de 1368px*/
+
+@media(max-width: 1368px) {
+    
+
+    /*css dos tutoriais*/
+    .conteudotutorial{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+}
+
+/*Break de 768px*/
+@media(max-width: 768px) {
+   
+
+    #apresentacao {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    #apresentacao > div > img{
+        width: 100px;
+    }
+    
+    .content {
+        font-size: 30px;
+        padding: 17px;
+    }
+    .container {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .caracteristicafigura {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /*css dos tutoriais*/
+    .conteudotutorial{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+    .conteudotutorial > video{
+        margin: 30px;
+
+    }
+    .conteudotutorial > iframe{
+        margin: 30px;
+        width: 320;
+        height: 240;
+    }
+}
+
+/*Break de 360px*/
+@media(max-width: 360px) {
+    .conteudotutorial > iframe{
+        margin: 30px;
+        width: 300;
+        height: 200;
+    }
+}

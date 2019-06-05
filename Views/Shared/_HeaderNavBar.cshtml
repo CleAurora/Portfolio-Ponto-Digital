@@ -1,0 +1,18 @@
+@{
+    var user = (string) ViewData["User"];
+}
+ <nav class = "menu">
+    <ul>
+        <li><a href='@Url.Action("Index", "Home")' asp-controller = "Home" asp-action = "Index" class=active>Principal</a></li>
+        <li><a href='@Url.Action("Index", "Home")#pacotes'>Pacotes</a></li>
+
+
+        <li><a href='@Url.Action("Index", "ComoUsar")' asp-controller = "ComoUsar" asp-action = "Index" class=active>Como Usar</a></li>
+
+         <li><a href='@Url.Action("Index", "QuemSomos")' asp-controller = "QuemSomos" asp-action = "Index" class=active>Quem Somos</a></li>
+        
+         <li><a href='@Url.Action("Index", "Contribuicao")' asp-controller = "Contribuicao" asp-action = "Index" class=active>Contribuição</a></li>
+        
+         <li><a href='@Url.Action("Index", "Avaliacao")'  asp-controller = "Avaliacao" asp-action = "Index" class=active>Avaliação</a></li>
+    </ul>
+</nav>
