@@ -1,10 +1,9 @@
-* {
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
     list-style: none;
 }
-
-a {
+a{
     text-decoration: none;
 }
 
@@ -44,7 +43,56 @@ h1 {
     font-size: 60px;
 }
 
+/*css das características*/
+.conteudocaracteristicas{
+    color: 
 
+}
+.content {
+    font-size: 38px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002858;
+    padding: 38px;
+}
+
+.container {
+    font-size: 25px;
+    color: #656878;
+    text-align: justify;
+    padding: 25px;
+}
+.caracteristicafigura{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em;
+}
+.caracteristicafigura > p{
+    margin: 1em;
+
+}
+h3{
+    padding: 1.5em;
+    color: #002858;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*css dos tutoriais*/
+.conteudotutorial{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+}
+.conteudotutorial > video{
+    margin: 30px;
+
+}
+.conteudotutorial > iframe{
+    margin: 30px;
+}
 
 /*css do footer*/
 
@@ -88,21 +136,27 @@ address {
         font-size: 40px;
     }
     .content {
-        font-size: 30px;
+        font-size: 17px;
         padding: 17px;
     }
     .container {
         font-size: 25px;
         padding: 25px;
     }
-   
-    /*css do footer*/
-    .local > a >img {
+      /*css do footer*/
+      .local > a >img {
         width: 40px;
         height: 55px;
     }
-}
 
+    /*css dos tutoriais*/
+    .conteudotutorial{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+}
 
 /*Break de 768px*/
 @media(max-width: 768px) {
@@ -153,5 +207,45 @@ address {
         width: 100px;
     }
     
+    .content {
+        font-size: 30px;
+        padding: 17px;
+    }
+    .container {
+        font-size: 20px;
+        padding: 5px;
+    }
 
+    .caracteristicafigura {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    /*css dos tutoriais*/
+    .conteudotutorial{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+    .conteudotutorial > video{
+        margin: 30px;
+
+    }
+    .conteudotutorial > iframe{
+        margin: 30px;
+        width: 320;
+        height: 240;
+    }
+}
+
+/*Break de 360px*/
+@media(max-width: 360px) {
+    .conteudotutorial > iframe{
+        margin: 30px;
+        width: 300;
+        height: 200;
+    }
 }

@@ -1,10 +1,9 @@
-* {
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
     list-style: none;
 }
-
-a {
+a{
     text-decoration: none;
 }
 
@@ -44,7 +43,50 @@ h1 {
     font-size: 60px;
 }
 
+/*css do formulário*/
+body{
+    text-align: center;
+    height: 100%;
+}
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.content {
+    font-size: 38px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002858;
+    padding: 38px;
+}
+
+.container {
+    font-size: 25px;
+    color: #656878;
+    text-align: justify;
+    padding: 25px;
+}
+
+form{
+    margin: 0 auto;
+    width: 50%;
+    text-align: left;
+}
+
+input, select{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #d1d1d1;
+}
+form{
+    margin: 10px 0;
+}
+form > div{
+    display: inline-block;
+    width: 100%;
+}
 
 /*css do footer*/
 
@@ -89,20 +131,38 @@ address {
     }
     .content {
         font-size: 30px;
-        padding: 17px;
+        padding: 30px;
     }
     .container {
-        font-size: 25px;
-        padding: 25px;
+        font-size: 20px;
+        padding: 20px;
     }
-   
-    /*css do footer*/
-    .local > a >img {
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    form{
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+    
+    input, select{
+        width: 100%;
+        height: 40px;
+        border: none;
+        background-color: #d1d1d1;
+    }
+     /*css do footer*/
+     .local > a >img {
         width: 40px;
         height: 55px;
     }
-}
 
+}
 
 /*Break de 768px*/
 @media(max-width: 768px) {
@@ -152,6 +212,6 @@ address {
     #apresentacao > div > img{
         width: 100px;
     }
-    
-
 }
+
+/*Break de 360px*/

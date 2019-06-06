@@ -12,6 +12,7 @@ namespace Portfolio_Ponto_Digital.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["ViewName"] = "Home"; 
             return View();
         }
 

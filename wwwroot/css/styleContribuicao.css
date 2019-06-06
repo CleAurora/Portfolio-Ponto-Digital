@@ -1,10 +1,9 @@
-* {
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
     list-style: none;
 }
-
-a {
+a{
     text-decoration: none;
 }
 
@@ -44,10 +43,28 @@ h1 {
     font-size: 60px;
 }
 
+.content {
+    font-size: 38px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002858;
+    padding: 38px;
+}
 
+.container {
+    font-size: 25px;
+    color: #656878;
+    text-align: justify;
+    padding: 25px;
+}
+
+#contribuir > ul{
+    font-size: 20px;
+    color: #656878;
+    text-align: center;
+    padding: 1em;
+}
 
 /*css do footer*/
-
 footer {
     text-align: center;
     background-color: #0f2558;
@@ -71,7 +88,6 @@ address {
     height: 40px;
 }
 
-/*Break de 1368px*/
 
 @media(max-width: 1368px) {
     /*css da header*/
@@ -88,21 +104,19 @@ address {
         font-size: 40px;
     }
     .content {
-        font-size: 30px;
+        font-size: 17px;
         padding: 17px;
     }
     .container {
         font-size: 25px;
         padding: 25px;
     }
-   
-    /*css do footer*/
-    .local > a >img {
+      /*css do footer*/
+      .local > a >img {
         width: 40px;
         height: 55px;
     }
 }
-
 
 /*Break de 768px*/
 @media(max-width: 768px) {
@@ -152,6 +166,13 @@ address {
     #apresentacao > div > img{
         width: 100px;
     }
-    
+    .content {
+        font-size: 30px;
+        padding: 17px;
+    }
+    .container {
+        font-size: 20px;
+        padding: 5px;
+    }
 
 }

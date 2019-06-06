@@ -1,0 +1,81 @@
+<header>
+
+@{
+    Html.RenderPartial("_HeaderNavBar");
+}
+
+
+    <div id="apresentacao">
+        <div>
+            <img src="imagens/logo.png" alt="Logotipo: Círculo azul claro com om Brasil em azul escuro no cebtro e uma localização em cima de tudo.">
+        </div>
+        <div>
+            <h1>Ponto Digital <br></h1>
+            <h2>Supervisão Inteligente</h2>
+        </div>
+    </div>
+   
+</header>
+
+ <main>
+        <section class="container formulario">
+            <h2 class="content">Cadastro</h2>
+            <form method="GET" action="index.html">
+                <label for="login">Nome Completo: </label>
+                <br>
+                <input name="login" id="login" type="login" maxlength="300" minlength="3" placeholder="Digite seu login aqui" required>
+                <br>
+                
+                <label for="password">Senha: </label>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha aqui" required >
+                <br>
+
+                <img src="imagens/5-estrela.png"  class= "estrelas" alt="5 estrelas para que a pessoa possa avaliar o site" width="220px" height="80px">
+
+                <label for ="comente"></label>
+                <textarea  id="comente" rows="10" name="comente" maxlength="500" wrap="hard" placeholder="Deixe seu comentário aqui" required></textarea>
+
+                <input type="submit" value="Enviar Comentário">
+            </form>
+        </section>
+  
+
+    <section id="opiniao" class="content">
+        <h2>Dizem por aí...</h2>
+        <div class="empresasopiniao">
+            <div>
+                <img src="imagens/wesley.png" alt="Homem alto, bem vestido, com sinal de aprovação na mão.">
+                <div class="nomeopiniao">
+                <h3 class="nomespessoas">Wesley</h3>
+                </div>
+                <p>Meu contato com o ponto digital me permitiu alavancar a empresa de uma maneira muito adequada! É muito fácil de instalar, não exige grandes investimentos e o retorno é certo! Faciliotu não apenas meu dia a dia, mas de meus funcionários também! Pode usar!</p>
+            </div>
+            <div>
+                <img src="imagens/janaina.png" alt="Moça morena, feliz, mostrando apenas o rosto">
+                <div class="nomeopiniao">
+                <h3 class="nomespessoas">Janaína</h3>
+                </div>
+                <p>O Ponto digital foi essencial pra minha empresa! É muito fácil! Pode usar que vale a pena!</p>
+            </div>
+            <div>
+                <img src="imagens/thiago.png" alt="Homem tranquilo, com o boné para traz e sorriso no rosto.">
+                <div class="nomeopiniao">
+                <h3 class="nomespessoas">Thiago</h3>
+                </div>
+                <p>Eu decidi começar do zero, minha empresa ainda é pequena, mas já conta com dez funcionarios. Se não fosse pelo ponto digital, teria muita dificuldade de ter o controle que tenho em relação ao RH. Obrigado Aí sim!!!</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(function(){
+        var nav = $('.menu');
+        var botao = $('.btn_menu');
+        botao.on('click', function(){
+            nav.toggleClass("active");
+        });
+    }); 
+    </script>

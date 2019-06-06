@@ -27,3 +27,6 @@ C:\Users\34132336883\Documents\senai\Projetos\Portfolio-Ponto-Digital\obj\Debug\
 C:\Users\34132336883\Documents\senai\Projetos\Portfolio-Ponto-Digital\obj\Debug\netcoreapp2.1\Portfolio-Ponto-Digital.pdb
 C:\Users\34132336883\Documents\senai\Projetos\Portfolio-Ponto-Digital\obj\Debug\netcoreapp2.1\Portfolio-Ponto-Digital.csproj.CopyComplete
 C:\Users\34132336883\Documents\senai\Projetos\Portfolio-Ponto-Digital\obj\Debug\netcoreapp2.1\Razor\Views\ComoUsar\Index.g.cshtml.cs
+C:\Users\34132336883\Documents\senai\Projetos\Portfolio-Ponto-Digital\obj\Debug\netcoreapp2.1\Razor\Views\Avaliacao\Index.g.cshtml.cs
+C:\Users\34132336883\Documents\senai\Projetos\Portfolio-Ponto-Digital\obj\Debug\netcoreapp2.1\Razor\Views\Contribuicao\Index.g.cshtml.cs
+C:\Users\34132336883\Documents\senai\Projetos\Portfolio-Ponto-Digital\obj\Debug\netcoreapp2.1\Razor\Views\QuemSomos\Index.g.cshtml.cs

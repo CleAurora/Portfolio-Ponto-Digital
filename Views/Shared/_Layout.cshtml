@@ -5,6 +5,33 @@
     <meta charset="UTF-8">
     <title>Ponto Digital</title>
     <link rel="stylesheet" href="~/css/style.css" type="text/css">
+    @switch ((string)ViewData["ViewName"])
+    {
+        case "Home":
+        <link rel = "stylesheet" href="~/css/styleHome.css" type="text/css">
+        break;
+
+        case "Avaliacao":
+        <link rel = "stylesheet" href="~/css/styleAvaliacao.css" type="text/css">
+        break;
+
+        case "Cadastro":
+        <link rel = "stylesheet" href="~/css/styleCadastro.css" type="text/css">
+        break;
+
+        case "ComoUsar":
+        <link rel = "stylesheet" href="~/css/styleComoUsar.css" type="text/css">
+        break;
+
+        case "Contribuicao":
+        <link rel = "stylesheet" href="~/css/styleContribuicao.css" type="text/css">
+        break;
+
+        case "QuemSomos":
+        <link rel = "stylesheet" href="~/css/styleQuemSomos.css" type="text/css">
+        break;   
+    }
+
 </head>
 
 <body class="flex-container">
