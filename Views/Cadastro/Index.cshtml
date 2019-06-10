@@ -1,3 +1,4 @@
+@model Portfolio_Ponto_Digital.ViewModels.ClienteViewModel;
 <header>
 
 @{
@@ -39,7 +40,7 @@
             
             <label for="cargo">Cargo: </label>
             <br>
-            <input type="text" placeholder="Digite seu cargo na empresa">
+            <input type="text" name="cargo" placeholder="Digite seu cargo na empresa">
             <br>
             
             <label for="endereco">Endereço: </label>
@@ -60,13 +61,14 @@
             <div>        
                 <label for="plano">Plano</label>
                 <br>
+
                 <select name="plano" id="plano" required>
                     <option value="" disabled selected>Selecione:</option>
-                    <option value="plano1">Plano 01</option>
-                    <option value="plano2">Plano 02</option>
-                    <option value="plano3"> Plano 03</option>
-                    <option value="plano3"> Plano 03</option>
-                    <option value="teste">Teste</option>
+                    @foreach (var item in Model.planos)
+                    {
+                        <option value="@item.Id @item.Nome @item.Preco">@item.Id @item.Nome @item.Preco</option>    
+                    }
+                   
                 </select>
             </div>
 

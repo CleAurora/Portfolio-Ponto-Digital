@@ -2,11 +2,11 @@ using System;
 
 namespace Portfolio_Ponto_Digital.Models
 {
-    public class Pedido
+    public class PedidoModel
     {
         public int Id {get;set;}
-        public Cliente Cliente {get;set;}
-        public Plano Plano{get;set;}
+        public ClienteModel Cliente {get;set;}
+        public PlanoModel Plano{get;set;}
         public DateTime DataPedido {get;set;}
         public double PrecoTotal {get;set;}
 

@@ -59,37 +59,47 @@
         <h2>Pacotes</h2>
         <div class="conteudopacotes">
             <section id="plano1" class="plano">
-                <a href="../cadastro/index.html" target="_blank">
+                <a href='@Url.Action("Index", "Cadastro")' target="_blank">
                     <h3>Plano 1</h3>
                     <p>Empresas com até<br>5 funcionários.</p>
                     <p>Retorno até 24h.</p>
+                    <div class="preco">
+                        <p>R$ 29,90</p>
+                    </div>
+                </a>
+            </section>
+            <section id="plano2" class="plano">
+                <a href='@Url.Action("Index", "Cadastro")'  target="_blank">
+                    <h3>Plano 2</h3>
+                    <p>Empresas com até<br> 50 funcionários.</p>
+                    <p>Retorno até 12h.</p>
                     <div class="preco">
                         <p>R$ 149,90</p>
                     </div>
                 </a>
             </section>
-            <section id="plano2" class="plano">
-                <a href="../cadastro/index.html" target="_blank">
-                    <h3>Plano 2</h3>
-                    <p>Empresas com até<br> 50 funcionários.</p>
-                    <p>Retorno até 12h.</p>
+            <section id="plano3" class="plano">
+                <a href='@Url.Action("Index", "Cadastro")'   target="_blank">
+                    <h3>Plano 3</h3>
+                    <p>Empresas com até<br> 500 funcionários.</p>
+                    <p>Retorno até 2h.</p>
                     <div class="preco">
                         <p>R$ 299,90</p>
                     </div>
                 </a>
             </section>
-            <section id="plano3" class="plano">
-                <a href="../cadastro/index.html" target="_blank">
-                    <h3>Plano 3</h3>
-                    <p>Empresas com até<br> 500 funcionários.</p>
-                    <p>Retorno até 2h.</p>
+             <section id="plano4" class="plano">
+                <a href='@Url.Action("Index", "Cadastro")'  target="_blank">
+                    <h3>Plano 4</h3>
+                    <p>Empresas com mais de<br> 500 funcionários.</p>
+                    <p>Retorno até 1h.</p>
                     <div class="preco">
                         <p>A Definir</p>
                     </div>
                 </a>
             </section>
             <section id="planoteste" class="plano">
-                <a href="../cadastro/index.html" target="_blank">
+                <a href='@Url.Action("Index", "Cadastro")'  target="_blank">
                     <h3>Plano Teste</h3>
                     <p>1 funcionário.</p>
                     <p>Retorno até 48h.</p>

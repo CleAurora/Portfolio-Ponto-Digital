@@ -96,6 +96,13 @@ textarea{
     width: 99%;
     border: #000 2px solid;
 }
+.cadastrar{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #002858;
+    font-weight: bolder;
+    font-size: 20px;
+}
 
 /*css da parte das empresas inteligentes e opiniao*/
 

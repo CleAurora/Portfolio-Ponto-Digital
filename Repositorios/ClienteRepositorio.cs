@@ -6,25 +6,23 @@ namespace Portfolio_Ponto_Digital.Repositorios
 {
     public class ClienteRepositorio: BaseRepositorio
     {
-        public static uint CONT = 0;
-        private const string PATH = "Database/Cliente.csv";
-        private const string PATH_INDEX = "Database/Cliente_Id.csv";
-        private List<Cliente> clientes = new List<Cliente> ();
-
-        public ClienteRepositorio()
-        {
-            if (!File.Exists(PATH_INDEX)){
-                File.Create(PATH_INDEX).Close();
+       
+        public ClienteModel CadastrarCliente (ClienteModel cliente){
+            if(File.Exists("clientes.csv")){
+                cliente.Id = File.ReadAllLines("clientes.csv").Length +1;
+            }else{
+                cliente.Id = 1;
             }
 
-            var ultimoIndice = File.ReadAllText(PATH_INDEX);
-            uint indice = 0;
-            uint.TryParse(ultimoIndice, out indice);
-            CONT = indice;
-        }
+            StreamWriter sw = new StreamWriter("clientes.csv");
+            sw.WriteLine($"{cliente.Id};{cliente.Nome};{cliente.CPF};{cliente.DataNascimento};{cliente.Cargo};{cliente.Endereco};{cliente.Email};{cliente.Telefone};{cliente.Senha}");
+            sw.Close();
 
+            return cliente;
+
+        }//fim cadastrar
         
-        }
+        
 
     }
 }
