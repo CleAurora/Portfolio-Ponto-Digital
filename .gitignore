@@ -2,7 +2,6 @@
 /.recomenders/
 /RemoteSystemsTempFiles
 /.settings
-/Refs
 bin/
 obj/
 .DS_Store
