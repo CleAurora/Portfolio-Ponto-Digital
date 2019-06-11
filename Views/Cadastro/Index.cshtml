@@ -22,7 +22,7 @@
  <main>
     <section class="container formulario">
         <h2 class="content">Cadastro</h2>
-        <form method="GET" action="index.html">
+        <form method="POST" action="/Cadastro/Cadastrar">
             <label for="nome">Nome Completo: </label>
             <br>
             <input name="nome" id="nome" type="text" maxlength="300" minlength="3" placeholder="Digite seu nome completo aqui" required>
@@ -74,12 +74,12 @@
 
             <label for="Senha">Senha:</label>
             <br>
-            <input type="senha" name="senha" id="senha" minlength="4" maxlength="12" placeholder="Digite sua senha aqui (4 a 12 chars)" required>
+            <input type="password" name="senha" id="senha" minlength="4" maxlength="12" placeholder="Digite sua senha aqui (4 a 12 chars)" required>
             <br>
 
             <label for="ConfirmaSenha">Confirme a Senha por favor:</label>
             <br>
-            <input type="senha" name="confirmaSenha" id="confirmaSenha" minlength="4" maxlength="12" placeholder="Confirme sua senha aqui" required>
+            <input type="password" name="confirmaSenha" id="confirmaSenha" minlength="4" maxlength="12" placeholder="Confirme sua senha aqui" required>
             <br>
             <br>
             <input type="submit" value="Enviar Cadastro">

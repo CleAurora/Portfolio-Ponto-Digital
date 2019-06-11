@@ -39,8 +39,8 @@ namespace Portfolio_Ponto_Digital.Controllers
                 telefone:       form["telefone"],
                 senha:          form["senha"]
             );
+            ClienteRepositorio.Inserir(cliente);
             
-            ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
             return RedirectToAction("Index", "Cliente");
         }//fim Cadastrar
     }

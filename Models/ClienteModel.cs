@@ -39,5 +39,7 @@ namespace Portfolio_Ponto_Digital.Models
 
         }
 
+        public ClienteModel(){}
+
     }
 }

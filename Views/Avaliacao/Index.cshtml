@@ -20,10 +20,10 @@
  <main>
         <section class="container formulario">
             <h2 class="content">Login</h2>
-            <form method="GET" action="index.html">
+            <form method="POST" action="Cliente/Login">
                 <label for="login">E-mail: </label>
                 <br>
-                <input name="login" id="login" type="login" maxlength="300" minlength="3" placeholder="Digite seu e-mail aqui" required>
+                <input name="email" id="login" type="text" maxlength="300" minlength="3" placeholder="Digite seu e-mail aqui" required>
                 <br>
                 
                 <label for="password">Senha: </label>
@@ -38,21 +38,6 @@
                 <br>
                 
                 <a href='@Url.Action("Index", "Cadastro")' class="cadastrar"  target="_blank">Quero me Cadastrar!</a>
-            </form>
-        </section>
-
-
-        <!--Parte que só pode aparecer para a pessoa que fez o login -->
-        <section class="container formulario">
-            <h2 class="content">Avaliação</h2>
-            <form method="GET" action="index.html">
-               
-                <img src="imagens/5-estrela.png"  class= "estrelas" alt="5 estrelas para que a pessoa possa avaliar o site" width="220px" height="80px">
-
-                <label for ="comente"></label>
-                <textarea  id="comente" rows="10" name="comente" maxlength="500" wrap="hard" placeholder="Deixe seu comentário aqui" required></textarea>
-
-                <input type="submit" value="Enviar Comentário">
             </form>
         </section>
   
