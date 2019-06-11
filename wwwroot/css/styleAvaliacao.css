@@ -101,6 +101,7 @@ textarea{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #002858;
     font-weight: bolder;
+    display: block;
     font-size: 20px;
 }
 
