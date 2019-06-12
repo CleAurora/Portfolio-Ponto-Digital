@@ -14,5 +14,11 @@
          <li><a href='@Url.Action("Index", "Contribuicao")' asp-controller = "Contribuicao" asp-action = "Index" class=active>Contribuição</a></li>
         
          <li><a href='@Url.Action("Index", "Avaliacao")'  asp-controller = "Avaliacao" asp-action = "Index" class=active>Avaliação</a></li>
+         @if(string.IsNullOrEmpty(user))
+         {
+             <li><a href='@Url.Action("Index","Cadastro")' id="bt_login" >Login/Cadastro</a></li>
+         }else{
+             <li><a href='@Url.Action("Index", "Cliente")' id="bt_logout" >Logout</a></li>
+         }
     </ul>
 </nav>

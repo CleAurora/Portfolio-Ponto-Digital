@@ -13,6 +13,7 @@ namespace Portfolio_Ponto_Digital.Models
         public string Email {get;set;}
         public string Telefone {get;set;}
         public string Senha{get;set;}
+        public string tipo {get;set;}
 
         public ClienteModel(int id, string nome, string cpf, DateTime dataNascimento, string cargo, string endereco, string email, string telefone, string senha){
             this.Id = id;
@@ -41,5 +42,9 @@ namespace Portfolio_Ponto_Digital.Models
 
         public ClienteModel(){}
 
+        public ClienteModel(string nome)
+        {
+            Nome = nome;
+        }
     }
 }

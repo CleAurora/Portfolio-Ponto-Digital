@@ -12,6 +12,7 @@ namespace Portfolio_Ponto_Digital.Controllers
 
            public IActionResult Index()
         {
+            ViewData["User"] = HttpContext.Session.GetString(SESSION_EMAIL);
             ViewData["ViewName"] = "Avaliacao"; 
             return View();
         }

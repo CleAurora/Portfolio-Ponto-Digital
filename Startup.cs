@@ -33,6 +33,13 @@ namespace Portfolio_Ponto_Digital
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".Portfolio-Ponto-Digital.Session";
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.IsEssential = true;
+            });//para usar http context e deslogar em 10s
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +58,7 @@ namespace Portfolio_Ponto_Digital
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseSession();//add http context
 
             app.UseMvc(routes =>
             {
