@@ -36,7 +36,7 @@ namespace Portfolio_Ponto_Digital
             services.AddSession(options =>
             {
                 options.Cookie.Name = ".Portfolio-Ponto-Digital.Session";
-                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.IdleTimeout = TimeSpan.FromSeconds(100);
                 options.Cookie.IsEssential = true;
             });//para usar http context e deslogar em 10s
 

@@ -1,0 +1,104 @@
+@model Portfolio_Ponto_Digital.ViewModels.HomeViewModel;
+<header>
+
+@{
+    Html.RenderPartial("_HeaderNavBar");
+}
+
+
+    <div id="apresentacao">
+        <div>
+            <img src="imagens/logo.png" alt="Logotipo: Círculo azul claro com om Brasil em azul escuro no cebtro e uma localização em cima de tudo.">
+        </div>
+        <div>
+            <h1>Ponto Digital <br></h1>
+            <h2>Supervisão Inteligente</h2>
+        </div>
+    </div>
+   
+</header>
+
+<main>
+    <p>Área do Administrador</p>
+
+
+    <form action='@Url.Action("BuscarComentarios", "Administrador")' method="POST">
+
+        <label for="Listar">Selecione</label>
+        <select name="Listar">
+            <option value="" disabled selected>Selecione</option>
+            <option value="">Lista de Clientes</option>
+            <option value="">Lista Completa de Comentários</option>
+            <option value="">Lista Aprovada de Comentários</option>
+            <option value="">Lista de Comentários Aguardando Avaliação</option>
+        </select>
+        <input type="submit" value="Listar">
+    </form>
+
+
+   
+    
+
+    <h2>Lista de Comentários</h2>
+
+    <table>
+        <thead>
+            <th>Pessoa</th>
+            <th>Comentários</th>
+            <th>Data de Entrada</th>
+            <th>Status</th>    
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Comentarios)
+            {
+                @if(item == null){
+                    continue;
+                }
+                <tr>  
+                    <td>@item.Pessoa.Nome</td>
+                    <td>@item.Comentario</td>
+                    <td>@item.DataEntrada</td>
+                    <td>@item.Status
+                         <form action="@Url.Action()" method="POST">
+
+                            <label for="status">Status</label>
+                            <select name="status">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="aprovado">Aprovado</option>
+                                <option value="reprovado">Reprovado</option>
+                            </select>
+                            <input type="submit" value="Filtrar">
+                        </form>
+                    </td>
+                    <td></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <th>Nome</th>
+            <th>Nascimento</th>
+            <th>E-mail</th>
+            <th>Tipo</th>    
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Clientes)
+            {
+                @if(item == null){
+                    continue;
+                }
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@item.DataNascimento</td>
+                    <td>@item.Email</td>
+                    <td>@item.Tipo</td>
+                    <td></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</main>
+        

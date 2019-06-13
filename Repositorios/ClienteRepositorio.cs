@@ -25,6 +25,7 @@ namespace Portfolio_Ponto_Digital.Repositorios {
                     cliente.Email = dados[6];
                     cliente.Telefone = dados[7];
                     cliente.Senha = dados[8];
+                    cliente.Tipo = dados[9];
 
                     ListaDeClientes.Add (cliente);
                 }
@@ -53,7 +54,12 @@ namespace Portfolio_Ponto_Digital.Repositorios {
             }
             ListaDeClientes = ListarClientes ();
             cliente.Id = ListaDeClientes == null ? 1 : ListaDeClientes.Count + 1;
-            File.AppendAllText (CLIENTES_PATH, $"{cliente.Id};{cliente.Nome};{cliente.CPF};{cliente.DataNascimento};{cliente.Cargo};{cliente.Endereco};{cliente.Email};{cliente.Telefone};{cliente.Senha}\n");
+            if(cliente.Nome.Equals("Administrador") && cliente.Email.Equals("admin@agoravai.com") && cliente.Senha.Equals("admin")){
+                cliente.Tipo = "Administrador";
+            }else{
+                cliente.Tipo = "comum"; 
+            }
+            File.AppendAllText (CLIENTES_PATH, $"{cliente.Id};{cliente.Nome};{cliente.CPF};{cliente.DataNascimento};{cliente.Cargo};{cliente.Endereco};{cliente.Email};{cliente.Telefone};{cliente.Senha};{cliente.Tipo}\n");
         }
 
     }

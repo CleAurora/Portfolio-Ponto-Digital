@@ -10,7 +10,7 @@ namespace Portfolio_Ponto_Digital.Repositorios
         const string COMENTARIOS_PATH = "Database/Comentarios.csv";
 
         private static List<ComentarioModel> ListaDeComentarios = new List<ComentarioModel>();
-        private static List<ComentarioModel> ListaDeComentariosAprovados = new List<ComentarioModel>();
+        // private static List<ComentarioModel> ListaDeComentariosAprovados = new List<ComentarioModel>();
 
         public static List<ComentarioModel> ListarComentarios(){
             string[] comentarios = File.ReadAllLines(COMENTARIOS_PATH);
@@ -21,7 +21,9 @@ namespace Portfolio_Ponto_Digital.Repositorios
                     var comentario = new ComentarioModel();
 
                     comentario.Id = int.Parse(dados[0]);
-                    comentario.Pessoa.Nome = dados[1];
+                    ClienteModel Pessoa = new ClienteModel();
+                    Pessoa.Nome = dados[1];
+                    comentario.Pessoa = Pessoa;
                     comentario.Comentario = dados[2];
                     comentario.DataEntrada = DateTime.Parse(dados[3]);
                     comentario.Status = dados[4];
@@ -39,16 +41,26 @@ namespace Portfolio_Ponto_Digital.Repositorios
             ListaDeComentarios = ListarComentarios();
             comentario.Id = ListaDeComentarios == null ? 1 : ListaDeComentarios.Count + 1;
             comentario.DataEntrada = DateTime.Now;
-            File.AppendAllText (COMENTARIOS_PATH, $"{comentario.Id};{comentario.Pessoa.Nome};{comentario.Comentario};{comentario.DataEntrada}");
-        }
-
-        public static void InserirComentariosAprovados (ComentarioModel comentario){
-            if(!File.Exists(COMENTARIOS_PATH)){
-                File.Create(COMENTARIOS_PATH).Close();
-            }
-            ListaDeComentariosAprovados = ListarComentarios();
-            comentario.Id = ListaDeComentariosAprovados == null ? 1 : ListaDeComentariosAprovados.Count + 1;
+            comentario.Status = "Aguardando";
             File.AppendAllText (COMENTARIOS_PATH, $"{comentario.Id};{comentario.Pessoa.Nome};{comentario.Comentario};{comentario.DataEntrada};{comentario.Status}");
         }
+
+
+        public List<ComentarioModel> Filtrar(string status){
+            List<ComentarioModel> listaFiltrada = new List<ComentarioModel>();
+            List<ComentarioModel> listaDeComentarios = ListarComentarios();
+
+            foreach (var item in listaDeComentarios )
+            {
+                if(item.Status.Equals("status")){
+                    listaFiltrada.Add(item);
+                }else{
+                    continue;
+                }
+            }//fim foreach
+            return listaFiltrada;
+        }//fim filtrar
+
+        
     }
 }
