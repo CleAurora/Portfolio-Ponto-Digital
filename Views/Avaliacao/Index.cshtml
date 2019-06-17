@@ -17,57 +17,58 @@
    
 </header>
 
- <main>
-        <section class="container formulario">
-            <h2 class="content">Login</h2>
-            <form method="POST" action="/Cliente/Login">
-                <label for="login">E-mail: </label>
-                <br>
-                <input name="email" id="login" type="text" maxlength="300" minlength="3" placeholder="Digite seu e-mail aqui" required>
-                <br>
-                
-                <label for="password">Senha: </label>
-                <br>
-                <input type="password" name="senha" id="password" placeholder="Digite sua senha aqui" required >
-                <br>
-                <br>
+<main>
+    <section class="container formulario">
+        <h2 class="content">Login</h2>
+        <form method="POST" action="/Cliente/Login">
+            <label for="login">E-mail: </label>
+            <br>
+            <input name="email" id="login" type="text" maxlength="300" minlength="3" placeholder="Digite seu e-mail aqui" required>
+            <br>
+            
+            <label for="password">Senha: </label>
+            <br>
+            <input type="password" name="senha" id="password" placeholder="Digite sua senha aqui" required >
+            <br>
+            <br>
 
-                <input type="submit" value="Entrar">
+            <input type="submit" value="Entrar">
 
-                <br>
-                <br>
-                
-                <a href='@Url.Action("Index", "Cadastro")' class="cadastrar"  target="_blank">Quero me Cadastrar!</a>
-            </form>
-        </section>
+            <br>
+            <br>
+            
+            <a href='@Url.Action("Index", "Cadastro")' class="cadastrar"  target="_blank">Quero me Cadastrar!</a>
+        </form>
+    </section>
+
+    <h2>Dizem por aí...</h2>
+
+    <table>
+        <thead>
+            <th>Nome</th>
+            <th>Comentário</th>
+            <th>Data</th>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ComentariosAprovados)
+            {
+                @if(item == null){
+                    continue;
+                }
+                <tr>
+                    <td>@item.Pessoa.Nome</td>
+                    <td>@item.Comentario</td>
+                    <td>@item.DataEntrada</td>
+                </tr>
+            }
+        </tbody>
+    </table>
   
 
-    <section id="opiniao" class="content">
-        <h2>Dizem por aí...</h2>
-        <div class="empresasopiniao">
-            <div>
-                <img src="imagens/wesley.png" alt="Homem alto, bem vestido, com sinal de aprovação na mão.">
-                <div class="nomeopiniao">
-                <h3 class="nomespessoas">Wesley</h3>
-                </div>
-                <p>Meu contato com o ponto digital me permitiu alavancar a empresa de uma maneira muito adequada! É muito fácil de instalar, não exige grandes investimentos e o retorno é certo! Faciliotu não apenas meu dia a dia, mas de meus funcionários também! Pode usar!</p>
-            </div>
-            <div>
-                <img src="imagens/janaina.png" alt="Moça morena, feliz, mostrando apenas o rosto">
-                <div class="nomeopiniao">
-                <h3 class="nomespessoas">Janaína</h3>
-                </div>
-                <p>O Ponto digital foi essencial pra minha empresa! É muito fácil! Pode usar que vale a pena!</p>
-            </div>
-            <div>
-                <img src="imagens/thiago.png" alt="Homem tranquilo, com o boné para traz e sorriso no rosto.">
-                <div class="nomeopiniao">
-                <h3 class="nomespessoas">Thiago</h3>
-                </div>
-                <p>Eu decidi começar do zero, minha empresa ainda é pequena, mas já conta com dez funcionarios. Se não fosse pelo ponto digital, teria muita dificuldade de ter o controle que tenho em relação ao RH. Obrigado Aí sim!!!</p>
-            </div>
-        </div>
-    </section>
+        
+
+
+
 </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

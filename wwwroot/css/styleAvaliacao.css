@@ -105,6 +105,25 @@ textarea{
     font-size: 20px;
 }
 
+/*css da parte da tabela*/
+
+table{
+    margin-left:auto; 
+    margin-right:auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+table thead{
+    font-weight: bolder;
+    color: darkblue;
+    background-color: goldenrod;
+    text-align: center;
+}
+
 /*css da parte das empresas inteligentes e opiniao*/
 
 .empresasopiniao {

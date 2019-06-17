@@ -2,6 +2,7 @@ using System;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Portfolio_Ponto_Digital.Repositorios;
+using Portfolio_Ponto_Digital.ViewModels;
 
 namespace Portfolio_Ponto_Digital.Controllers
 {
@@ -13,9 +14,11 @@ namespace Portfolio_Ponto_Digital.Controllers
 
            public IActionResult Index()
         {
+            AvaliacaoViewModel viewModel = new AvaliacaoViewModel();
+            viewModel.ComentariosAprovados = ComentarioRepositorio.Filtrar("Aprovado");
             ViewData["User"] = HttpContext.Session.GetString(SESSION_EMAIL);
             ViewData["ViewName"] = "Avaliacao"; 
-            return View();
+            return View(viewModel);
         }
 
 
