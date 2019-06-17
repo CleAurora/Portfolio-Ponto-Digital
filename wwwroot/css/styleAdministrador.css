@@ -1,0 +1,31 @@
+h2, h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: darkblue;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+table{
+    margin-left:auto; 
+    margin-right:auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    width: 90%;
+}
+
+table thead{
+    font-weight: bolder;
+    color: darkblue;
+    background-color: goldenrod;
+    text-align: center;
+}
+

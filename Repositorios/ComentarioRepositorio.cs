@@ -9,11 +9,10 @@ namespace Portfolio_Ponto_Digital.Repositorios
     {
         const string COMENTARIOS_PATH = "Database/Comentarios.csv";
 
-        private static List<ComentarioModel> ListaDeComentarios = new List<ComentarioModel>();
-        // private static List<ComentarioModel> ListaDeComentariosAprovados = new List<ComentarioModel>();
-
         public static List<ComentarioModel> ListarComentarios(){
             string[] comentarios = File.ReadAllLines(COMENTARIOS_PATH);
+            List<ComentarioModel> ListaDeComentarios = new List<ComentarioModel>();
+
             foreach (var item in comentarios)
             {
                 if(item != null){
@@ -31,14 +30,26 @@ namespace Portfolio_Ponto_Digital.Repositorios
                     ListaDeComentarios.Add(comentario);
                 }
             }
+
             return ListaDeComentarios;
         }//fim listar comentário
+
+        public static void AtualizarStatusComentario(int comentarioId, string status) {
+            List<ComentarioModel> ListaDeComentarios = ListarComentarios();
+            ComentarioModel comentario = ListaDeComentarios.Find(x => x.Id == comentarioId);
+            comentario.Status = status;
+
+            string[] comentarios = File.ReadAllLines(COMENTARIOS_PATH);
+            comentarios[comentarioId - 1] = $"{comentario.Id};{comentario.Pessoa.Nome};{comentario.Comentario};{comentario.DataEntrada};{comentario.Status}";
+
+            File.WriteAllLines(COMENTARIOS_PATH, comentarios);
+        }
 
         public static void Inserir (ComentarioModel comentario){
             if(!File.Exists(COMENTARIOS_PATH)){
                 File.Create(COMENTARIOS_PATH).Close();
             }
-            ListaDeComentarios = ListarComentarios();
+            List<ComentarioModel> ListaDeComentarios = ListarComentarios();
             comentario.Id = ListaDeComentarios == null ? 1 : ListaDeComentarios.Count + 1;
             comentario.DataEntrada = DateTime.Now;
             comentario.Status = "Aguardando";
@@ -46,13 +57,13 @@ namespace Portfolio_Ponto_Digital.Repositorios
         }
 
 
-        public List<ComentarioModel> Filtrar(string status){
+        public static List<ComentarioModel> Filtrar(string status){
             List<ComentarioModel> listaFiltrada = new List<ComentarioModel>();
             List<ComentarioModel> listaDeComentarios = ListarComentarios();
 
             foreach (var item in listaDeComentarios )
             {
-                if(item.Status.Equals("status")){
+                if(item.Status.Equals(status)){
                     listaFiltrada.Add(item);
                 }else{
                     continue;

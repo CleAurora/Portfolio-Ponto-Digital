@@ -1,0 +1,27 @@
+.containerformulario textarea{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.content{
+    padding: 20px;
+    color: darkblue;
+    font-size: 30px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.containerformulario input{
+    display: block;
+    margin: 30px auto;
+    color: darkblue;
+    background-color: darkgoldenrod;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+
+}
+

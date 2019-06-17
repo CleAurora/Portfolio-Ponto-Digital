@@ -19,10 +19,19 @@
 </header>
 
 <main>
-    <p>Área do Administrador</p>
+    <h3>Área do Administrador</h3>
+    <br>
 
+    <h2>Informações do Sistema:</h2>
+    <p> @Model.ClientesCadastrados Clientes </p> 
+    <p> @Model.ComentariosCadastrados Comentários </p>
+    <p> @Model.ComentariosAprovados Comentários Aprovados</p> 
+    <p> @Model.ComentariosReprovados Comentários Reprovados </p>
 
-    <form action='@Url.Action("BuscarComentarios", "Administrador")' method="POST">
+    <br>
+    <br>
+
+    <!-- <form action='@Url.Action("BuscarComentarios", "Administrador")' method="POST">
 
         <label for="Listar">Selecione</label>
         <select name="Listar">
@@ -33,7 +42,7 @@
             <option value="">Lista de Comentários Aguardando Avaliação</option>
         </select>
         <input type="submit" value="Listar">
-    </form>
+    </form> -->
 
 
    
@@ -46,28 +55,29 @@
             <th>Pessoa</th>
             <th>Comentários</th>
             <th>Data de Entrada</th>
-            <th>Status</th>    
+            <th>Status</th>  
+            <th>Administrar</th>
         </thead>
         <tbody>
             @foreach (var item in Model.Comentarios)
             {
-                @if(item == null){
+                @if(item == null) {
                     continue;
                 }
                 <tr>  
                     <td>@item.Pessoa.Nome</td>
                     <td>@item.Comentario</td>
                     <td>@item.DataEntrada</td>
-                    <td>@item.Status
-                         <form action="@Url.Action()" method="POST">
-
-                            <label for="status">Status</label>
+                    <td>@item.Status</td>
+                    <td>
+                         <form action='@Url.Action("AtualizarComentario", "Administrador")' method="POST">
+                            <input type="hidden" name="comentarioId" value="@item.Id"/>
                             <select name="status">
                                 <option value="" disabled selected>Selecione</option>
-                                <option value="aprovado">Aprovado</option>
-                                <option value="reprovado">Reprovado</option>
+                                <option value="Aprovado">Aprovado</option>
+                                <option value="Reprovado">Reprovado</option>
                             </select>
-                            <input type="submit" value="Filtrar">
+                            <input type="submit" value="Atualizar">
                         </form>
                     </td>
                     <td></td>
@@ -76,6 +86,10 @@
         </tbody>
     </table>
 
+<br>
+<br>
+
+<h2>Lista de Clientes</h2>
     <table>
         <thead>
             <th>Nome</th>

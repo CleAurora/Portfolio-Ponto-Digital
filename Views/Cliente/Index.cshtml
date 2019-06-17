@@ -20,15 +20,15 @@
  <main>
         
         <!--Parte que só pode aparecer para a pessoa que fez o login -->
-        <section class="container formulario">
+        <section class="containerformulario">
             <h2 class="content">Avaliação</h2>
             <form method="POST" action="/Cliente/EnviarComentario">
                
-                <img src="imagens/5-estrela.png"  class= "estrelas" alt="5 estrelas para que a pessoa possa avaliar o site" width="220px" height="80px">
 
                 <label for ="comente"></label>
-                <textarea  id="comente" rows="10" name="comente" maxlength="500" wrap="hard" placeholder="Deixe seu comentário aqui" required></textarea>
+                <textarea  id="comente" rows="10" name="comente" maxlength="5000" wrap="hard" placeholder="Deixe seu comentário aqui" required></textarea>
 
+                <br>
                 <input type="submit" value="Enviar Comentário">
             </form>
         </section>

@@ -5,12 +5,12 @@ using Portfolio_Ponto_Digital.Models;
 
 namespace Portfolio_Ponto_Digital.Repositorios {
     public class ClienteRepositorio : BaseRepositorio {
-
         const string CLIENTES_PATH = "Database/Clientes.csv";
 
-        private static List<ClienteModel> ListaDeClientes = new List<ClienteModel> ();
         public static List<ClienteModel> ListarClientes () {
             string[] clientes = File.ReadAllLines (CLIENTES_PATH);
+            List<ClienteModel> ListaDeClientes = new List<ClienteModel> ();
+
             foreach (var item in clientes) {
                 if (item != null) {
                     string[] dados = item.Split (";");
@@ -52,7 +52,7 @@ namespace Portfolio_Ponto_Digital.Repositorios {
             if (!File.Exists (CLIENTES_PATH)) {
                 File.Create (CLIENTES_PATH).Close ();
             }
-            ListaDeClientes = ListarClientes ();
+            List<ClienteModel> ListaDeClientes = ListarClientes ();
             cliente.Id = ListaDeClientes == null ? 1 : ListaDeClientes.Count + 1;
             if(cliente.Nome.Equals("Administrador") && cliente.Email.Equals("admin@agoravai.com") && cliente.Senha.Equals("admin")){
                 cliente.Tipo = "Administrador";
